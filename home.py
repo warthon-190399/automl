@@ -35,6 +35,9 @@ st.title("¡Bienvenido a Auto-ML Analyzer!")
 st.write("En Auto-ML Analyzer, encontrarás una plataforma completa para explorar tus datos y desarrollar modelos de machine learning de manera eficiente.")
 st.write("En la sección de Análisis Exploratorio de Datos, podrás explorar gráficos interactivos que te permitirán visualizar tus variables y comprender mejor su distribución y relación entre sí.")
 st.write("En la sección de Análisis de Modelos, podrás seleccionar entre modelos de regresión y clasificación. Cada uno de estos modelos viene con una serie de opciones que te permitirán evaluar su desempeño y determinar cuál se ajusta mejor a tus datos.")
+
+logo = "logoPulseNegro.png"
+st.sidebar.image(logo)
 st.sidebar.title("Auto Machine Learning Analyzer")
 df = st.file_uploader(label="Por favor, carga tu archivo csv:")
 section = st.sidebar.radio("Sección:", ("Análisis Exploratorio de Datos", "Análisis de Modelos de Machine Learning"))
